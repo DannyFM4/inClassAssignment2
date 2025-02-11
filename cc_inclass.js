@@ -13,16 +13,16 @@ let products = [
 
 // Task 2 - Array Methods
 
-// function applyDiscount(products, discountRate) {
-//     return products.map(product => ({
-//         ...product,
-//         price: product.price - (product.price * discountRate)
-//     }
+function applyDiscount(products, discountRate) {
+    return products.map(product => ({
+        ...product,
+        price: product.price - (product.price * discountRate)
+    }
 
-//     ));
-// };
+    ));
+};
 
-// console.log(applyDiscount(products, .10));
+console.log(applyDiscount(products, .10));
 
 
 // Example of using the elipse below
@@ -46,3 +46,13 @@ function calculateTotalRevenue(sales) {
 }
 
 console.log(calculateTotalRevenue(sales));
+
+// Task 4 - Object Manipulation
+
+let employee = { name: "John Doe", salary: 50000, position: "Manager"};
+
+function updateSalary(employee, percentageIncrease){
+    return employee.salary += employee.salary * percentageIncrease;
+};
+
+console.log(updateSalary(employee, .1));
