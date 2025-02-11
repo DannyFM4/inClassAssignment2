@@ -34,3 +34,15 @@ let products = [
 // let numbers = [1, 2, 4]
 
 // console.log(sum3(...numbers));
+
+
+
+// Task 3: Array Methods - Reduce
+
+let sales = [250, 400, 150, 900, 1200];
+
+function calculateTotalRevenue(sales) {
+    return sales.reduce((total, sale)=>total+sale,0);
+}
+
+console.log(calculateTotalRevenue(sales));
